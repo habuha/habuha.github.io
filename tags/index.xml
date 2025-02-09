@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Hugo Themes</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Hugo Themes</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Sebastian Pech</copyright>
+    <lastBuildDate>Sun, 25 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code</title>
+      <link>http://localhost:1313/tags/code/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index</title>
+      <link>http://localhost:1313/tags/index/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quote</title>
+      <link>http://localhost:1313/tags/quote/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quote/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/tags/test/</link>
+      <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aöäüß</title>
+      <link>http://localhost:1313/tags/a%C3%B6%C3%A4%C3%BC%C3%9F/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/a%C3%B6%C3%A4%C3%BC%C3%9F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>http://localhost:1313/tags/lorem-ipsum/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lorem-ipsum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Table</title>
+      <link>http://localhost:1313/tags/table/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/table/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Html</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/html/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text</title>
+      <link>http://localhost:1313/tags/text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/text/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emoji</title>
+      <link>http://localhost:1313/tags/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/emoji/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
