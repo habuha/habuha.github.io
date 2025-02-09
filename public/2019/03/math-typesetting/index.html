@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "http:\/\/localhost:1313\/"
+        },
+        "articleSection": "post",
+        "name": "Math Typesetting",
+        "headline": "Math Typesetting",
+        "description": "A brief guide to setup KaTeX",
+        "inLanguage": "en",
+        "author": "Sebastian Pech",
+        "creator": "Sebastian Pech",
+        "publisher": "Sebastian Pech",
+        "accountablePerson": "Sebastian Pech",
+        "copyrightHolder": "Sebastian Pech",
+        "copyrightYear": "2019",
+        "datePublished": "2019-03-08T00:00:00Z",
+        "dateModified": "2019-03-08T00:00:00Z",
+        "url" : "\/2019\/03\/math-typesetting\/",
+        "wordCount" : "123",
+        "keywords" : [ "Blog" ]
+    }
+</script>
+<title>
+    Math Typesetting &ndash; Hugo Themes
+</title><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="A brief guide to setup KaTeX">
+<meta name="author" content="Sebastian Pech">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+
+
+
+  <meta itemprop="name" content="Math Typesetting">
+  <meta itemprop="description" content="A brief guide to setup KaTeX">
+  <meta itemprop="datePublished" content="2019-03-08T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2019-03-08T00:00:00+00:00">
+  <meta itemprop="wordCount" content="123">
+<meta property="og:url" content="http://localhost:1313/2019/03/math-typesetting/">
+  <meta property="og:site_name" content="Hugo Themes">
+  <meta property="og:title" content="Math Typesetting">
+  <meta property="og:description" content="A brief guide to setup KaTeX">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2019-03-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-03-08T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Math Typesetting">
+  <meta name="twitter:description" content="A brief guide to setup KaTeX">
+      <meta name="twitter:site" content="@spech84">
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/vendor.min.1a3f2618b30b2b0722768139aebb0273b239a1b4e0b1c7a9d71b1f9b2da7d2c4aff72cb05af923d99e6076aa07997c57c19d3506c3a044894ef58d36bb11870e.css" integrity="sha512-Gj8mGLMLKwcidoE5rrsCc7I5obTgscep1xsfmy2n0sSv9yywWvkj2Z5gdqoHmXxXwZ01BsOgRIlO9Y02uxGHDg==">
+
+<body>
+
+
+
+
+
+<nav class="navbar navbar-light bg-white  border-bottom" aria-label="Navigation">
+    <div class="container">
+        <a class="navbar-brand link-primary" href="http://localhost:1313/">Hugo Themes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2">
+                
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link link-primary" href="http://localhost:1313/about/"><i class='fas fa-heart'></i> About</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item">
+                            <a class="nav-link link-primary" href="http://localhost:1313/2019/08/testpage-english/"> Testpage - English</a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<main role="main">
+
+    <div class="container mt-3 mb-3"><div class="card">
+    
+    
+
+<div class="card-body">
+    <h1 class="card-title"><a href="http://localhost:1313/2019/03/math-typesetting/">Math Typesetting</a></h1>
+    <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-calendar-day"></i>&nbsp;08.03.2019 - <i class="fas fa-user"></i>&nbsp;Hugo Authors - <i class="fas fa-clock"></i>&nbsp;~1 Minute</h6>
+    
+
+    
+        <p class="card-text"><p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<p>In this example we will be using <a href="https://katex.org/" target="_blank" rel="noopener noreferrer">
+KaTeX
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a></p>
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html" target="_blank" rel="noopener noreferrer">
+Auto-render Extension
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span> <span style="color:#66d9ef">if</span> or .Params.math .Site.Params.math <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> partial <span style="color:#e6db74">&#34;math.html&#34;</span> . <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> end <span style="color:#f92672">}}</span>
+</span></span></code></pre></div><ul>
+<li>To enable KaTeX globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
+<li>To enable KaTeX on a per page basis include the parameter <code>math: true</code> in content files</li>
+</ul>
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html" target="_blank" rel="noopener noreferrer">
+Supported TeX Functions
+&nbsp;<i class="fas fa-external-link-alt"></i>
+
+</a></p>
+
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+<h3 id="examples">Examples</h3>
+
+<p>
+Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
+</p>
+
+<p>Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$</p></p>
+    
+</div>
+<div class="card-footer">
+    <small class="text-muted">
+        
+            
+            
+        
+    </small>
+</div>
+</div>
+</div>
+
+
+        </main><footer class="navbar-light border-top pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Hugo Themes</h5>
+                Text about the site
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Social</h5>
+                <ul class="list-unstyled list-inline">
+  <li class="list-inline-item"><a href="https://github.com/spech66" target="_blank" rel="noopener noreferrer" title="GitHub" class="fab fa-github fa-2x"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://linkedin.com/in/sebastian-pech" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="fab fa-linkedin fa-2x"></a></li>
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://www.xing.com/profile/Sebastian_Pech3" target="_blank" rel="noopener noreferrer" title="Xing" class="fab fa-xing fa-2x"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li class="list-inline-item"><a href="https://twitter.com/spech84" target="_blank" rel="noopener noreferrer" title="Twitter" class="fab fa-twitter fa-2x"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Site</h5>
+                <ul class="list-unstyled">
+                    
+                        
+                            <li><a href="http://localhost:1313/about/"><i class='fas fa-address-card'></i> About</a></li>
+                        
+                    
+                        
+                            <li><a href="http://localhost:1313/categories/"><i class='fas fa-folder'></i> Categories</a></li>
+                        
+                    
+                        
+                            <li><a href="http://localhost:1313/tags/"><i class='fas fa-tags'></i> Tags</a></li>
+                        
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                
+    <h5>Translations</h5>
+    <ul class="list-unstyled">
+        
+            <li><a href="http://localhost:1313/"></a></li>
+        
+    </ul>
+
+
+
+                &copy; 2025 Sebastian Pech<br/>
+                Theme by <a href="https://www.spech.de" target="_blank" rel="noopener noreferrer">Sebastian Pech</a>.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="http://localhost:1313/js/vendor.min.6d49ceb313355fb248c4b81d838c3af1ebc141020733cccb9bdb7f9f5b2cc40f80c5d9d037dee96da15a7814e3119fa5a30e849b7e2b33f022fbf7b301f08a53.js" integrity="sha512-bUnOsxM1X7JIxLgdg4w68evBQQIHM8zLm9t/n1ssxA&#43;AxdnQN97pbaFaeBTjEZ&#43;low6Em34rM/Ai&#43;/ezAfCKUw=="></script>
+</body>
+</html>
