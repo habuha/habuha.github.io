@@ -1,4 +1,4 @@
 baseURL = 'https://mapleafred.icu'
-languageCode = 'zh-cn'
-title = 'My New Hugo Site'
+languageCode = 'zh-CN'
+title = '铠甲合体'
 theme = 'ananke'
